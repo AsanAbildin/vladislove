@@ -1,6 +1,10 @@
 <template>
-  <AppHeader />
-  <router-view />
+  <div class="flex flex-col h-screen">
+    <AppHeader class="flex-shrink-0" />
+    <div class="flex-grow">
+      <router-view />
+    </div>
+  </div>
 </template>
 
 <script>

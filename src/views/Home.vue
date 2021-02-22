@@ -1,5 +1,8 @@
 <template>
-  <form class="h-full pb-20">
+  <form
+    class="h-full pb-20"
+    @submit.prevent="generateHandler"
+  >
     <div class="flex flex-wrap space-y-4">
       <h2 class="font-bold mb-1 text-lg w-full">
         Project
@@ -158,6 +161,12 @@ export default {
           },
         ],
       }
+    }
+  },
+
+  methods: {
+    generateHandler() {
+      console.log(this.form)
     }
   },
 };

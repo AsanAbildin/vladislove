@@ -2,7 +2,7 @@
   <div class="w-full">
     <div
       v-if="label"
-      class="font-bold mb-1"
+      class="mb-1"
     >
       {{ label }}
     </div>
@@ -23,7 +23,7 @@
           @change="changeHandler(option.value)"
         >
         <span
-          class="h-5 w-5 inline-block rounded-full border-2 border-primary"
+          class="h-5 w-5 inline-block rounded-full border-2 border-primary transition duration-200"
           :class="{'active bg-primary border-black': option.value === modelValue}"
         />
         <span class="ml-2">

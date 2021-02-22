@@ -13,6 +13,6 @@
 <style>
 .btn {
   @apply border-2 rounded-md border-black py-1 px-3 font-bold uppercase;
-  @apply hover:border-white;
+  @apply hover:border-primary hover:text-primary;
 }
 </style>

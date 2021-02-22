@@ -1,19 +1,19 @@
 <template>
-  <div>
+  <div class="w-full">
     <div
       v-if="label"
-      class="font-bold"
+      class="font-bold mb-1"
     >
       {{ label }}
     </div>
     <div
       v-if="options"
-      class="flex space-x-4"
+      class="flex flex-wrap"
     >
       <label
         v-for="option in options"
         :key="`option-${option.label}`"
-        class="flex items-center"
+        class="flex items-center mr-4 mb-2"
       >
         <input
           class="w-0 h-0"

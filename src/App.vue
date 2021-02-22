@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col h-screen">
     <AppHeader class="flex-shrink-0" />
-    <div class="flex-grow">
+    <div class="flex-grow container mx-auto px-3">
       <router-view />
     </div>
   </div>
